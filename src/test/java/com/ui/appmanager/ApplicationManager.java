@@ -43,7 +43,7 @@ public class ApplicationManager {
             prefs.put("profile.default_content_setting_values.notifications", 2);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setExperimentalOption("prefs", prefs);
-            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
             driver = new ChromeDriver(chromeOptions);
         }
         driver.manage().timeouts().implicitlyWait(10, SECONDS);
