@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'test.project'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile group: 'io.rest-assured', name: 'rest-assured', version: '3.0.3'
+    implementation 'com.google.code.gson:gson:2.8.5'
+}
